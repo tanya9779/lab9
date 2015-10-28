@@ -1,7 +1,10 @@
-epsil = 0.000001
-while True:
-    x=epsil/10
-    if 1.0+x == 1.0 and 1.0 + epsil !=1.0:
-        print (str(epsil))
+import sys
+epsil = 1.
+while 1.0+epsil!=1.0:
+    x=epsil/2
+    if 1.0+x != 1.0:
+        epsil=epsil/2
+    else:
         break
-    epsil=epsil/10
+print(str(epsil))
+#print(sys.float_info.epsilon)
